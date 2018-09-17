@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Articulo</title>
+<meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="shortcut icon" type= "image/x-icon" href= "img/ico2.ico">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+	  
+   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+
+<style> 
+#main {
+    width: 900px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+	position:relative;
+	top: 100px;
+	left:20%;
+}
+
+#main div {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+	position:relative;
+	left:30%;
+	top:100px;
+}
+
+#contenedor
+{
+position:relative;
+	left:50%;
+}
+
+input[type="submit"]{
+  position:relative;
+  left:220px;
+  top:50px;
+  width:30%;
+  border-radius: 20px;
+  background:linear-gradient(#0080C0,#0080C0);
+  border: 0;
+  color:white;
+  opacity: 0.8;
+  cursor:pointer;
+  padding:10px;
+}
+
+input[type="submit"]:hover
+{
+	opacity: 1;
+}
+
+input[type="submit"]:active
+{
+	transform: scale(0.95);
+}
+
+.forma-pago
+{
+	position:relative;
+	left:550px;
+	
+}
+
+.Contenido
+{
+    border: 2px solid pink;
+    border-radius: 12px;
+ 
+}
+.Contenido p
+{
+ text-align:center;
+font-family: 'Great Vibes', cursive;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+ <!---Menu horizontal-->
+     <div id="c-slider">
+		<header>
+		 <div class="contenedor">
+			  <img src = "img/banner2.png">
+			  <input type="text" placeholder=" &#128269; Buscar...">
+		 </div>
+		 	
+		 <div class="container">
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="button" ><font color="white">&#8801; </font></label>
+			
+			<a href="#">
+			  <img src = "img/1.png" class="avatar"  width="70px" height="70px" style="top:-6px;"/>
+			</a>
+			
+			<a href="#">
+			  <img src = "img/13.png" class="shop"  width="40px" height="40px"/>
+			</a>
+			
+
+			<nav class="nav">
+				<a href="#">Vestidos</a>
+				<a href="#">Blusas</a>
+				<a href="#">Pantalon</a>
+				<a href="#">Faldas</a>
+			</nav>
+			</div>
+	    </header>
+		</div>
+		
+
+		<div id="main">
+		  <div class="w3-content w3-section" style="max-width:300px;">
+		  <img class="mySlides w3-animate-fading" src="img/s-3.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-1.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-3.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-2.jpg" style="width:100%">
+		  </div>
+		  
+		  
+		  <div class="Contenido">
+		    <h1 style="color:pink;" align="center">Vestido con encaje rosa</h1>
+			<p>Descripcion:   </p>
+			<p>Categoria:  </p>
+			<p>Precio:  </p>
+			<p>Unidades:  </p>
+			<p>Oferta:  </p>
+			<p>Valoracion: &#9733; &#9733; &#9733; &#9733; &#9733;</p> 
+			<input type="submit" value="Añadir al carrito">
+		  </div>  
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		
+		<video width="700" controls>
+			<source src="Moment_HIGH.mp4" type="video/mp4">
+			<source src="Moment_HIGH.ogg" type="video/ogg">
+		</video>
+		
+		<br/>
+		<br/>
+		
+	  
+		<!--Comentarios-->
+	
+	    <section>
+		
+		<div class="container2">
+			<div class="box">
+				<i class="fa fa-comment"></i>
+				<span id="comment-counter">0</span>
+			</div>
+			<div class="box">
+				<input type="text" placeholder="Añnadir comentario..." id="comment">
+				<button id="add-comment">Añadir comentario</button>
+			</div>
+			<section class="comments" id="comments-container"></section>
+		</div>
+	   </section>
+		
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 9000);    
+		}
+		</script>
+		
+		<script  src="js/index.js"></script>
+</body>
+
+</html>

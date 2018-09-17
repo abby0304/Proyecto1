@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	box-sizing:border-box;
+}
+
+
+form{
+	margin:auto;
+	width:30%;
+	max-width:900px;
+	background:#fff;
+	padding:20px;
+	border: 2px solid rgba(0,0,0,0.5);
+	position:relative;
+	top:100px;
+
+}
+
+img
+{
+	margin:auto;
+	display:block;
+}
+
+h3, label
+{
+	color:rgba(0,0,0,0.8);
+}
+
+input
+{
+	display:block;
+	padding:7px;
+	width:95%;
+	font-size: 15px;
+}
+
+
+input[type="submit"]{
+  margin:auto;
+  width:50%;
+  border-radius: 20px;
+  background:linear-gradient(#0080C0,#0080C0);
+  border:0;
+  color:white;
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+input[type="submit"]:hover
+{
+	opacity: 1;
+}
+
+input[type="submit"]:active
+{
+	transform: scale(0.95);
+}

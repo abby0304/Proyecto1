@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en"> <!--declarar idioma--> 
+  <head>
+    <title>Registrarse</title>
+    <link rel="shortcut icon" type= "image/x-icon" href= "img/ico2.ico">
+    <meta charset="UTF-8">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/cuenta.css">
+		<style>
+		  body
+			{
+				background:url(imagenes/11.jpg);
+				background-repeat:no-repeat;
+				width:100%;
+				height:100%;
+				display:flex;
+				min-height:100vh;
+			}
+		</style>
+  </head>
+  <body>
+  
+   <!---Menu horizontal-->
+     <div id="c-slider">
+	   <header>
+		 <div class="contenedor">
+			  <img src = "img/banner2.png">
+			  <input type="text" placeholder=" &#128269; Buscar..." style="width:15%;">
+		 </div>
+		 	
+		 <div class="container">
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="button"><font color="white">&#8801; </font></label>
+			
+			<a href="#">
+			  <img src = "img/1.png" class="avatar"  width="70px" height="70px" style= "top:-10px;"/>
+			</a>
+			
+			<a href="#">
+			  <img src = "img/13.png" class="shop"  width="40px" height="40px" style= "top:5px;"/>
+			</a>
+			
+
+			<nav class="nav">
+				<a href="#">Vestidos</a>
+				<a href="#">Blusas</a>
+				<a href="#">Pantalon</a>
+				<a href="#">Faldas</a>
+			</nav>
+		 </div>
+	   </header>
+	</div>
+		
+    <form action="">
+	   <img src = "img/banner.jpg"  width="220px" height="70px"/>
+	    <br/>
+	    <h3>Agregar un nuevo articulo</h3>
+		
+		<br/>
+		<input type="text" placeholder="&#9726; Nombre del articulo" name="articulo">
+		
+		<br/>
+		<input type="text" placeholder="&#9726; Descripcion" name="descripcion">
+		
+		<br/>
+        <input type="text" placeholder="&#128176; Precio" name="precio">
+		
+		<br/>
+		<input type="password" placeholder="&#9997; Unidades" name="unidades">
+		
+		
+        <br/>
+		<label for="Imagen1">Imagen 1</label>
+		<input type="file" name="myFile"> 
+		
+		<br/>
+		<label for="Imagen2">Imagen 2</label>
+		<input type="file" name="myFile"> 
+		
+		<br/>
+		<label for="Imagen3">Imagen 3</label>
+		<input type="file" name="myFile"> 
+		
+		<br/>
+		<label for="video">Video</label>
+		<input type="file" name="myFile">
+		
+	
+		<br/>
+		<input type="submit" onclick="myFunction()" Value="Registar">
+		<br/>
+	</form>
+	
+	<script>
+		function myFunction() {
+			confirm("¿Desea publicar el articulo?");
+		}
+	</script>
+
+  </body>
+</html>
